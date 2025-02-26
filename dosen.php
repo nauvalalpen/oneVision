@@ -16,7 +16,7 @@
             <tr>
               <th scope="col">No</th>
               <th scope="col">NIP</th>
-              <th scope="col">Nama Dosen</th>
+              <th scope="col">Nama Dosen Sarah</th>
               <th scope="col">Prodi</th>
               <th scope="col">Foto</th>
               <th scope="col">Aksi</th>
