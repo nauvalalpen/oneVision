@@ -10,7 +10,7 @@
             ?>
 
         <h1>Data Prodi</h1>
-        <a href="index.php?page=prodi&aksi=create " class="btn btn-primary">Tambah Data</a>
+        <a href="index.php?page=prodi&aksi=create " class="btn btn-warning">Tambah Data</a>
         <table class="table" id="dataTable">
           <thead>
             <tr>
