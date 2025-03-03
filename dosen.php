@@ -21,21 +21,14 @@ switch ($aksi) {
                     tbody td {
                         background-color: orange;
                     }
-<<<<<<< HEAD
 
-=======
->>>>>>> 7c70ee53d3b7f3ae581e29575863c609a3f85e12
                 </style>
                     <th scope="col">No</th>
                     <th scope="col">NIP</th>
                     <th scope="col">Nama Dosen</th>
                     <th scope="col">Prodi</th>
                     <th scope="col">Foto</th>
-<<<<<<< HEAD
                     <th scope="col">Action</th>
-=======
-                    <th scope="col">Aksi</th>
->>>>>>> 7c70ee53d3b7f3ae581e29575863c609a3f85e12
                 </tr>
             </thead>
             <tbody>
@@ -59,11 +52,7 @@ switch ($aksi) {
                         <td>
                             <a href="index.php?page=dosen&aksi=update&id=<?= $data['nip'] ?>" class="btn btn-warning">Edit</a>
                             <?php if ($_SESSION['level'] == 'admin') { ?>
-<<<<<<< HEAD
                                 <a href="proses_dosen.php?proses=hapus&id=<?= $data['nip'] ?>" onclick="return confirm('Apakah anda yakin menghapus data ini ?')" class="btn btn-danger">Delete</a>
-=======
-                                <a href="proses_dosen.php?proses=hapus&id=<?= $data['nip'] ?>" onclick="return confirm('Apakah anda yakin menghapus data ini ?')" class="btn btn-danger">Hapus</a>
->>>>>>> 7c70ee53d3b7f3ae581e29575863c609a3f85e12
                             <?php } ?>
                         </td>
                     </tr>
