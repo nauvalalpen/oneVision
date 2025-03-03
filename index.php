@@ -34,7 +34,7 @@ $user = mysqli_fetch_assoc($query);
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.php">Siakad</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -114,8 +114,23 @@ $user = mysqli_fetch_assoc($query);
 
         // Initialize DataTable
         $('#dataTable').DataTable({
-            dom: 'Bfrtip',
-            buttons: ['copy', 'excel', 'pdf']
+            dom: 'Blrtip', // Modified dom parameter (removed search)
+            buttons: ['copy', 'excel', 'pdf'],
+            pageLength: 5,
+            lengthMenu: [5, 10, 25, 50],
+            searching: false,
+            language: {
+                lengthMenu: "Tampilkan _MENU_ data per halaman",
+                zeroRecords: "Data tidak ditemukan",
+                info: "Menampilkan halaman _PAGE_ dari _PAGES_",
+                infoEmpty: "Tidak ada data tersedia",
+                infoFiltered: "(difilter dari _MAX_ total data)",
+                paginate: {
+                    first: "Pertama",
+                    next: "Selanjutnya",
+                    previous: "Sebelumnya"
+                }
+            }
         });
     });
 </script>

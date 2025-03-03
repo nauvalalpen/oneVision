@@ -148,25 +148,25 @@ break;
         }
 
         // Reinitialize DataTable
-        $('#dataTable').DataTable({
-            dom: 'Bfrtip', // Include buttons
-            buttons: ['copy', 'excel', 'pdf'],
-            pageLength: 5, // Default number of rows
-            lengthMenu: [5, 10, 25, 50], // Dropdown options
-            language: {
-                search: "Cari:",
-                lengthMenu: "Tampilkan _MENU_ data per halaman",
-                zeroRecords: "Data tidak ditemukan",
-                info: "Menampilkan halaman _PAGE_ dari _PAGES_",
-                infoEmpty: "Tidak ada data tersedia",
-                infoFiltered: "(difilter dari _MAX_ total data)",
-                paginate: {
-                    first: "Pertama",
-                    last: "Terakhir",
-                    next: "Selanjutnya",
-                    previous: "Sebelumnya"
-                }
-            }
-        });
+        // $('#dataTable').DataTable({
+        //     dom: 'Bfrtip', // Include buttons
+        //     buttons: ['copy', 'excel', 'pdf'],
+        //     pageLength: 5, // Default number of rows
+        //     lengthMenu: [5, 10, 25, 50], // Dropdown options
+        //     language: {
+        //         search: "Cari:",
+        //         lengthMenu: "Tampilkan _MENU_ data per halaman",
+        //         zeroRecords: "Data tidak ditemukan",
+        //         info: "Menampilkan halaman _PAGE_ dari _PAGES_",
+        //         infoEmpty: "Tidak ada data tersedia",
+        //         infoFiltered: "(difilter dari _MAX_ total data)",
+        //         paginate: {
+        //             first: "Pertama",
+        //             last: "Terakhir",
+        //             next: "Selanjutnya",
+        //             previous: "Sebelumnya"
+        //         }
+        //     }
+        // });
     });
 </script>

@@ -196,33 +196,34 @@ break;
 <!-- DataTables -->
 
 <script>
-    $(document).ready(function () {
-        // Check if DataTable is already initialized, then destroy it
-        if ($.fn.DataTable.isDataTable('#dataTable')) {
-            $('#dataTable').DataTable().destroy(); // Destroy the existing DataTable instance
-        }
+    // $(document).ready(function () {
+    //     // Check if DataTable is already initialized, then destroy it
+    //     if ($.fn.DataTable.isDataTable('#dataTable')) {
+    //         $('#dataTable').DataTable().destroy(); // Destroy the existing DataTable instance
+    //     }
 
         // Reinitialize DataTable
-        $('#dataTable').DataTable({
-            dom: 'Bfrtip', // Include buttons
-            buttons: ['copy', 'excel', 'pdf'],
-            pageLength: 5, // Default number of rows
-            lengthMenu: [5, 10, 25, 50], // Dropdown options
-            language: {
-                search: "Cari:",
-                lengthMenu: "Tampilkan _MENU_ data per halaman",
-                zeroRecords: "Data tidak ditemukan",
-                info: "Menampilkan halaman _PAGE_ dari _PAGES_",
-                infoEmpty: "Tidak ada data tersedia",
-                infoFiltered: "(difilter dari _MAX_ total data)",
-                paginate: {
-                    first: "Pertama",
-                    last: "Terakhir",
-                    next: "Selanjutnya",
-                    previous: "Sebelumnya"
-                }
-            }
-        });
+        // $('#dataTable').DataTable({
+        //     dom: 'Blrtip', // Modified dom parameter (removed search)
+        //     buttons: ['copy', 'excel', 'pdf'],
+        //     pageLength: 5,
+        //     lengthMenu: [5, 10, 25, 50],
+        //     searching: false,
+        //     language: {
+        //         lengthMenu: "Tampilkan _MENU_ data per halaman",
+        //         zeroRecords: "Data tidak ditemukan",
+        //         info: "Menampilkan halaman _PAGE_ dari _PAGES_",
+        //         infoEmpty: "Tidak ada data tersedia",
+        //         infoFiltered: "(difilter dari _MAX_ total data)",
+        //         paginate: {
+        //             first: "Pertama",
+        //             next: "Selanjutnya",
+        //             previous: "Sebelumnya"
+        //         }
+        //     }
+        // });
+
+
     });
 </script>
 
