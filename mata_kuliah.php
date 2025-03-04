@@ -6,7 +6,7 @@
         case "read":
 ?>
         <h1>Data Mata Kuliah</h1>
-        <a href="index.php?page=mata_kuliah&aksi=create" class="btn btn-primary">Tambah Data</a>
+        <a href="index.php?page=mata_kuliah&aksi=create" class="btn btn-danger">Tambah Data</a>
         <table class="table" id="dataTable">
             <thead>
                 <tr>
@@ -39,7 +39,7 @@
                             <?php if($_SESSION['level'] == 'admin') { ?>
                                 <a href="prosesMata_kuliah.php?proses=hapus&kode=<?=$data['kode_mk'] ?>" 
                                    onclick="return confirm('Apakah anda yakin menghapus data ini ?')" 
-                                   class="btn btn-danger">Hapus</a>
+                                   class="btn btn-danger">Delete</a>
                             <?php } ?>
                         </td>
                     </tr>
